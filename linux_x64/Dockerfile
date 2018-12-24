@@ -66,7 +66,7 @@ RUN mkdir /qt5_bin && \
         OPENSSL_LIBS='-l:libssl.a -l:libcrypto.a' \
         -no-icu && \
     make -j$MAKE_J_VALUE && \
-    make install \
+    make install && \
     rm -rf /qt5_temp
 
 COPY ../common/build_linux.sh /build.sh
