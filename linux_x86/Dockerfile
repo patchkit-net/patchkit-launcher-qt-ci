@@ -69,4 +69,4 @@ RUN mkdir /qt5_bin && \
     make install && \
     rm -rf /qt5_temp
 
-COPY ../common/build_linux.sh /build.sh
+COPY build_linux.sh /build.sh
